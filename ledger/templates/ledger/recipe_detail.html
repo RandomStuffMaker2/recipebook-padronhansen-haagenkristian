@@ -1,7 +1,7 @@
 {% extends "ledger/recipe_base.html" %}
 
 {% block title %}{{ recipe.name }}{% endblock %}
-
+<p>Author: {{ recipe.author.name }}</p>
 {% block content %}
 
     <h2>{{recipe.name}}</h2>
@@ -13,6 +13,6 @@
         {% endfor %}
     </ul>    
 
-    <a href="/">Back to List</a>
+    <a href="/recipe/list">Back to List</a>
 
 {% endblock %}
